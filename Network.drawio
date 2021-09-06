@@ -1,25 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2021-09-06T16:33:25.543Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="aqI3cRLKlFvph00T7oQ5" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-06T16:35:59.089Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="Hko8uyX1m58W6hYGw10J" version="15.0.6" type="github">
   <diagram id="qgfwTgc8J1ceRvrJW_r9" name="Page-1">
-    <mxGraphModel dx="1185" dy="693" grid="0" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="574" grid="0" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="RxgWvyqrx6Sn8ADDrMQa-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot; color=&quot;#006eaf&quot;&gt;Query&lt;/font&gt;&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#1ba1e2;strokeWidth=3;strokeColor=#006EAF;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="450" y="164" as="sourcePoint" />
-            <mxPoint x="590" y="164" as="targetPoint" />
+            <mxPoint x="391" y="287" as="sourcePoint" />
+            <mxPoint x="531" y="287" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RxgWvyqrx6Sn8ADDrMQa-13" value="&lt;font style=&quot;font-size: 15px&quot; color=&quot;#006eaf&quot;&gt;&lt;b&gt;PC Client&lt;/b&gt;&lt;/font&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.laptop;fillColor=#2072B8;" parent="1" vertex="1">
-          <mxGeometry x="394" y="147" width="58" height="34" as="geometry" />
+          <mxGeometry x="335" y="270" width="58" height="34" as="geometry" />
         </mxCell>
         <mxCell id="RxgWvyqrx6Sn8ADDrMQa-14" value="&lt;b style=&quot;font-size: 15px&quot;&gt;&lt;font&gt;DNS Server&lt;br&gt;&lt;font color=&quot;#004c99&quot;&gt;203.80.96.100&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.physical_host;fillColor=#2072B8;fontColor=#006EAF;" parent="1" vertex="1">
-          <mxGeometry x="823" y="31" width="27" height="52" as="geometry" />
+          <mxGeometry x="764" y="154" width="27" height="52" as="geometry" />
         </mxCell>
         <mxCell id="iKQYUACnMpvooSJu9w_w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontColor=#006EAF;strokeColor=#006EAF;strokeWidth=3;fillColor=#0050ef;" edge="1" parent="1" source="RxgWvyqrx6Sn8ADDrMQa-15" target="RxgWvyqrx6Sn8ADDrMQa-14">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="604" y="57" />
+              <mxPoint x="545" y="180" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -30,18 +30,18 @@
         </mxCell>
         <mxCell id="iKQYUACnMpvooSJu9w_w-14" value="&lt;b&gt;Forward&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontColor=#006EAF;strokeColor=#006EAF;strokeWidth=3;fillColor=#0050ef;verticalAlign=middle;bendable=0;align=center;" edge="1" parent="1" target="iKQYUACnMpvooSJu9w_w-6">
           <mxGeometry x="0.1957" relative="1" as="geometry">
-            <mxPoint x="604" y="234" as="sourcePoint" />
+            <mxPoint x="545" y="357" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="604" y="296" />
+              <mxPoint x="545" y="419" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RxgWvyqrx6Sn8ADDrMQa-15" value="&lt;b style=&quot;font-size: 15px&quot;&gt;&lt;font&gt;DNS Server&lt;br&gt;203.80.96.33&lt;/font&gt;&lt;/b&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.physical_host;fillColor=#2072B8;fontColor=#006EAF;" parent="1" vertex="1">
-          <mxGeometry x="590" y="137" width="27" height="52" as="geometry" />
+          <mxGeometry x="531" y="260" width="27" height="52" as="geometry" />
         </mxCell>
         <mxCell id="iKQYUACnMpvooSJu9w_w-6" value="&lt;b style=&quot;font-size: 15px&quot;&gt;&lt;font&gt;DNS Server&lt;br&gt;203.80.96.99&lt;/font&gt;&lt;/b&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.physical_host;fillColor=#2072B8;fontColor=#006EAF;" vertex="1" parent="1">
-          <mxGeometry x="823" y="267" width="27" height="52" as="geometry" />
+          <mxGeometry x="764" y="390" width="27" height="52" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
