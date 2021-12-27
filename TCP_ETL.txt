@@ -1,0 +1,67 @@
+SET YYYYMMDD=%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%
+SET DRIVE=C:\TCPTrace-%computername%-%YYYYMMDD%
+md %DRIVE%
+
+ipconfig /flushdns
+klist purge 
+Klist purge -li 0x3e7
+nbtstat -RR
+ARP -d
+
+logman create trace "minio_netio" -ow -o %DRIVE%\minio_netio.etl -p {EB004A05-9B1A-11D4-9123-0050047759BC} 0xffffffffffffffff 0xff -nb 16 16 -bs 1024 -mode Circular -f bincirc -max 2048 -ets
+logman update trace "minio_netio" -p "Microsoft-Windows-TCPIP" 0xffffffffffffffff 0xff -ets
+logman update trace "minio_netio" -p "Microsoft-Windows-Winsock-AFD" 0xffffffffffffffff 0xff -ets
+logman update trace "minio_netio" -p {B40AEF77-892A-46F9-9109-438E399BB894} 0xffffffffffffffff 0xff -ets
+
+logman create trace "net_wfp" -ow -o %DRIVE%\net_wfp.etl -p {2588030C-920E-4AD5-ACBF-8AA2CD761DDB} 0xffffffffffffffff 0xff -nb 16 16 -bs 1024 -mode Circular -f bincirc -max 2048 -ets
+logman update trace "net_wfp" -p "Microsoft-Windows-Base-Filtering-Engine-Connections" 0xffffffffffffffff 0xff -ets
+logman update trace "net_wfp" -p {5A1600D2-68E5-4DE7-BCF4-1C2D215FE0FE} 0xffffffffffffffff 0xff -ets
+logman update trace "net_wfp" -p {AD33FA19-F2D2-46D1-8F4C-E3C3087E45AD} 0xffffffffffffffff 0xff -ets
+logman update trace "net_wfp" -p "Microsoft-Windows-WFP" 0xffffffffffffffff 0xff -ets
+
+ipconfig /all > %DRIVE%\ipconfig_before.txt
+tasklist /svc > %DRIVE%\task_before.txt
+netstat -anbo > %DRIVE%\netstat_before.txt
+fltmc >> %DRIVE%\fltmc.txt
+fltmc instances >> %DRIVE%\fltmc.txt
+netsh winhttp show proxy >> %DRIVE%\internet_settings.txt
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings" >> %DRIVE%\internet_settings.txt
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" >> %DRIVE%\internet_settings.txt
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" >> %DRIVE%\internet_settings.txt
+
+netsh wfp show filter 
+netsh wfp show state 
+move wfpstate.xml %DRIVE%
+move filters.xml %DRIVE%
+ipconfig /all > %DRIVE%\ipconfig_after.txt
+tasklist /svc > %DRIVE%\task_after.txt
+netstat -anbo > %DRIVE%\netstat_after.txt
+wevtutil export-log system %DRIVE%\system.evtx
+systeminfo > %DRIVE%\%computername%-sysinfo.txt
+
+netsh trace start capture=yes overwrite=yes tracefile=%DRIVE%\%computername%-nettrace.etl maxsize=2048
+
+
+@ECHO OFF
+pause
+ECHO.
+CHOICE /C Y /N /M "Press Y to Stop Tracing : "
+IF ERRORLEVEL 1 GOTO stopping
+:stopping
+@ECHO ON
+
+
+logman stop "minio_netio" -ets
+logman stop "net_wfp" -ets 
+
+ipconfig /all > %DRIVE%\ipconfig_after.txt
+tasklist /svc > %DRIVE%\task_after.txt
+netstat -anbo > %DRIVE%\netstat_after.txt
+
+netsh trace stop
+
+@ECHO OFF
+ECHO Tracing Completed. The Logs are saved at %DRIVE%
+ECHO.
+pause
+ECHO.
