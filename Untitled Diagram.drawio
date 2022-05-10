@@ -1,1 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2022-05-07T20:40:24.974Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32" version="17.5.0" etag="Ql_7nEDkBa0zl0jyFW1x" type="github"><diagram id="qgkdd4oEpCmcMA6bY20Q">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-10T11:06:35.409Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39" etag="Dp4h3fG18jbhAGn1qsxm" version="18.0.2" type="github">
+  <diagram id="qgkdd4oEpCmcMA6bY20Q" name="Page-1">
+    <mxGraphModel dx="1422" dy="786" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-33" value="" style="rounded=0;whiteSpace=wrap;html=1;editable=0;" vertex="1" parent="1">
+          <mxGeometry x="117" y="44" width="928" height="627" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="284" y="282" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="282" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-4" value="VNET1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="254" y="262" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-5" value="VNET2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="595" y="262" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-6" target="UbCEWmo0q7lTJ8ChfkkE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-6" value="Private DNS Zone 1 in Resource Group 1&lt;br&gt;&lt;span style=&quot;color: rgb(23, 78, 134); font-family: Calibri, sans-serif, serif, EmojiFont; font-size: 14.6667px; text-align: start;&quot;&gt;privatelink.mysql.database.azure.com&lt;br&gt;DB1 A记录&lt;br&gt;DB2 A记录&lt;br&gt;&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/DNS_Zones.svg;" vertex="1" parent="1">
+          <mxGeometry x="382" y="92" width="74" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.525;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-8" target="UbCEWmo0q7lTJ8ChfkkE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-8" value="Private DNS Zone 2 in Resource Group 2&lt;br&gt;&lt;span style=&quot;color: rgb(23, 78, 134); font-family: Calibri, sans-serif, serif, EmojiFont; font-size: 14.6667px; text-align: start;&quot;&gt;privatelink.mysql.database.azure.com&lt;br&gt;&lt;strike&gt;DB2 A记录&lt;/strike&gt;&lt;br&gt;&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/DNS_Zones.svg;" vertex="1" parent="1">
+          <mxGeometry x="735" y="92" width="74" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-11" target="UbCEWmo0q7lTJ8ChfkkE-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-11" value="Azure Database MySQL Server&lt;br&gt;DB1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="394" y="542" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-12" target="UbCEWmo0q7lTJ8ChfkkE-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-12" value="Azure Database MySQL Server&lt;br&gt;DB2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="747" y="540" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-16" value="Private Endpoint&lt;br&gt;DB1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Private_Endpoint.svg;" vertex="1" parent="1">
+          <mxGeometry x="382" y="342" width="72" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-18" value="Private Endpoint&lt;br&gt;DB2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Private_Endpoint.svg;" vertex="1" parent="1">
+          <mxGeometry x="735" y="342" width="72" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-34" value="Azure" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/CDN_Profiles.svg;" vertex="1" parent="1">
+          <mxGeometry x="70" y="17" width="134.3" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-37" value="" style="rounded=0;whiteSpace=wrap;html=1;editable=0;" vertex="1" parent="1">
+          <mxGeometry x="117" y="731" width="928" height="648" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="284" y="990" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="990" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-40" value="VNET1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="254" y="970" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-41" value="VNET2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="595" y="970" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-43" target="UbCEWmo0q7lTJ8ChfkkE-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.525;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=1.027;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-43" target="UbCEWmo0q7lTJ8ChfkkE-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="591" y="905" />
+              <mxPoint x="772" y="905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-43" value="Private DNS Zone 1 in Resource Group 1&lt;br&gt;&lt;span style=&quot;color: rgb(23, 78, 134); font-family: Calibri, sans-serif, serif, EmojiFont; font-size: 14.6667px; text-align: start;&quot;&gt;privatelink.mysql.database.azure.com&lt;br&gt;DB1 A记录&lt;br&gt;DB2 A记录&lt;br&gt;&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/DNS_Zones.svg;" vertex="1" parent="1">
+          <mxGeometry x="554" y="747" width="74" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-47" target="UbCEWmo0q7lTJ8ChfkkE-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-47" value="Azure Database MySQL Server&lt;br&gt;DB1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="394" y="1250" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbCEWmo0q7lTJ8ChfkkE-49" target="UbCEWmo0q7lTJ8ChfkkE-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-49" value="Azure Database MySQL Server&lt;br&gt;DB2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="747" y="1248" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-50" value="Private Endpoint&lt;br&gt;DB1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Private_Endpoint.svg;" vertex="1" parent="1">
+          <mxGeometry x="382" y="1050" width="72" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-51" value="Private Endpoint&lt;br&gt;DB2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Private_Endpoint.svg;" vertex="1" parent="1">
+          <mxGeometry x="735" y="1050" width="72" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="UbCEWmo0q7lTJ8ChfkkE-52" value="Azure" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/CDN_Profiles.svg;" vertex="1" parent="1">
+          <mxGeometry x="70" y="725" width="134.3" height="79" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
