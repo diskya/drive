@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T08:25:51.853Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39" version="18.0.2" etag="k9elXwtlbddTaEoDsXxy" type="github"><diagram id="ptObz6Ka3BbNxjtAWZyo">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-11T08:27:09.218Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39" etag="hzi8D3X4E0PXIt8cdJRl" version="18.0.2" type="github">
+  <diagram id="ptObz6Ka3BbNxjtAWZyo" name="Page-1">
+    <mxGraphModel dx="1662" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jOYvyM4cM1HQlEKBaCWQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jOYvyM4cM1HQlEKBaCWQ-1" target="jOYvyM4cM1HQlEKBaCWQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jOYvyM4cM1HQlEKBaCWQ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="290" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jOYvyM4cM1HQlEKBaCWQ-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="250" width="290" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jOYvyM4cM1HQlEKBaCWQ-3" value="VNET1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jOYvyM4cM1HQlEKBaCWQ-4" value="VNET2" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" vertex="1" parent="1">
+          <mxGeometry x="600" y="230" width="67" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
