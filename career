@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2022-07-11T10:11:37.513Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="ZjNSW0OQyp1JmecVwYi7" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-11T10:12:40.822Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="8RbwaM5AaUdyAamorkCg" version="20.0.4" type="github">
   <diagram name="Page-1" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
     <mxGraphModel dx="810" dy="454" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8RK7-uLeWZ5_An43GtY2-77" value="起点" style="rounded=1;whiteSpace=wrap;html=1;comic=0;arcSize=33;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="471" y="375" width="89" height="41" as="geometry" />
+        <mxCell id="8RK7-uLeWZ5_An43GtY2-77" value="起点：无限可能" style="rounded=1;whiteSpace=wrap;html=1;comic=0;arcSize=33;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="463" y="346" width="105" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="8RK7-uLeWZ5_An43GtY2-82" value="目标&lt;br&gt;幸福" style="rounded=1;whiteSpace=wrap;html=1;comic=0;arcSize=33;sketch=1;" vertex="1" parent="1">
+        <mxCell id="8RK7-uLeWZ5_An43GtY2-82" value="目标：幸福" style="rounded=1;whiteSpace=wrap;html=1;comic=0;arcSize=33;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="471" y="735" width="89" height="41" as="geometry" />
         </mxCell>
       </root>
